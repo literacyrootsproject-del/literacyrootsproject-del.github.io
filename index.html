@@ -253,6 +253,51 @@ padding:10px;
 
 
 
+.summer-photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+
+  /* Break out of the parent container */
+  width: 100vw;
+  max-width: none;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.summer-photo-gallery img {
+  display: block;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .summer-photo-gallery img {
+    height: 260px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .summer-photo-gallery {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .summer-photo-gallery img {
+    height: 280px;
+  }
+}
+
+
+
+
 .cta{
 background:#4E7580;
 color:white;
@@ -365,6 +410,25 @@ By providing free early literacy education, practical parenting tools, and conne
 
 Our 2026 Early Literacy Summer Enrichment Program was a wonderful success, made possible by your trust, enthusiasm, and commitment to your children’s learning and growth. We are grateful to have been part of their early educational journey!</h2>
 </div>
+
+<div class="summer-photo-gallery">
+  <img
+    src="IMG_7695.jpg"
+    alt="Children participating in our summer literacy program"
+    loading="lazy"
+  >
+  <img
+    src="CampGroup.jpg"
+    alt="Children enjoying hands-on learning activities"
+    loading="lazy"
+  >
+  <img
+    src="IMG_7652.jpg"
+    alt="Children learning and playing together"
+    loading="lazy"
+  >
+</div>
+
 <div class="ml-embedded" data-form="kPrkuf"></div>
 </section>
 
@@ -539,3 +603,4 @@ literacyrootsproject@gmail.com &nbsp; ph: 518-817-0935
 
 </body>
 </html>
+
